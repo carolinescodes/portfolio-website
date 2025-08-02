@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 // Generate static params for all art pieces
 export async function generateStaticParams() {
@@ -26,7 +25,7 @@ export default async function ArtDetails({ params }) {
       medium: 'Oil on Canvas',
       size: '36" x 24"',
       year: '2023',
-      description: ''
+      description: 'A serene landscape capturing the peaceful morning moments as geese gather at dawn. This piece explores the tranquil beauty of nature and the gentle transition from night to day.'
     },
     'art2': {
       title: 'Gracie Portrait',
@@ -102,13 +101,11 @@ export default async function ArtDetails({ params }) {
       <h1 className="text-4xl font-bold text-pink-400 mb-12 text-center">{artwork.title}</h1>
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-4xl">
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
-          <Image
+          <img
             src={artwork.image}
             alt={artwork.title}
-            width={400}
-            height={500}
             className="rounded-xl shadow-xl object-cover"
-            style={{ maxHeight: '500px', width: 'auto' }}
+            style={{ maxHeight: '500px', width: 'auto', maxWidth: '100%' }}
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start">
