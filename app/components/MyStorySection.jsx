@@ -2,37 +2,37 @@ import React from 'react';
 
 const storyData = [
 	{
-		image: '/Story/fam.jpg',
+		image: '/portfolio-website/Story/fam.jpg',
 		title: 'Early Years',
 		text: 'Grew up in Vienna, Virginia with my three older brothers and most wonderful parents. I quickly loved all things art, music, and creativity.',
 	},
 	{
-		image: '/Story/hs.jpg',
+		image: '/portfolio-website/Story/hs.jpg',
 		title: 'High School in the City',
 		text: 'Moved to Georgetown in Washington, DC for high school. Fell in love with city, all girls education, and being pushed academically.',
 	},
 	{
-		image: '/Story/visi.jpg',
+		image: '/portfolio-website/Story/visi.jpg',
 		title: 'College Bound',
 		text: 'Finished my four years at Georgetown Visitation. Due to my amazing AP Computer Science class, I decided to head to Wake Forest and major in Computer Science.',
 	},
 	{
-		image: '/Story/wake.jpg',
+		image: '/portfolio-website/Story/wake.jpg',
 		title: 'Wake Forest',
 		text: 'Continually feeling supported by my professors, I stuck with Computer Science and added minors in Math and Studio Art to round out my education.',
 	},
 	{
-		image: '/Story/aflac.jpg',
+		image: '/portfolio-website/Story/aflac.jpg',
 		title: 'Aflac',
 		text: 'I got my first internship at Aflac summer after my sophomore year where I found close mentorship in my boss, who has continued to help shape my career. I was able to develop great interpersonal soft skills to bring into my technical future.',
 	},
 	{
-		image: '/Story/flo.jpg',
+		image: '/portfolio-website/Story/flo.jpg',
 		title: 'Semester Abroad',
 		text: 'I had the once in a lifetime opportunity to study abroad in Florence, Italy Fall of 2024 where I studied fine art in the art capital of the world.',
 	},
 	{
-		image: '/Story/ge.jpg',
+		image: '/portfolio-website/Story/ge.jpg',
 		title: 'GE Aerospace',
 		text: 'My experience culminated in my summer internship at GE Aerospace following my junior year, where I have been able to work within the Data Science and Analytics team to grow my skills and tackle new challenges, solidifying my technical abilities.',
 	},

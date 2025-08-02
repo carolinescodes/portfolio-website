@@ -4,55 +4,55 @@ import Link from 'next/link';
 const artPieces = [
   {
     slug: 'art1',
-    image: `/ART/art1.jpg`,
+    image: `/portfolio-website/ART/art1.jpg`,
     title: `Geese at Dawn`,
     subtitle: `Oil on Canvas`
   },
   {
     slug: 'art2',
-    image: `/ART/art2.jpg`,
+    image: `/portfolio-website/ART/art2.jpg`,
     title: `Gracie Portrait`,
     subtitle: `Acrylic on Canvas`
   },
   {
     slug: 'art3',
-    image: `/ART/art3.jpg`,
+    image: `/portfolio-website/ART/art3.jpg`,
     title: `Portrait Study`,
     subtitle: `Oil on Canvas`
   },
   {
     slug: 'art4',
-    image: `/ART/art4.JPG`,
+    image: `/portfolio-website/ART/art4.JPG`,
     title: `Ponte Vecchio`,
     subtitle: `Oil on Wood`
   },
   {
     slug: 'art5',
-    image: `/ART/art5.JPG`,
+    image: `/portfolio-website/ART/art5.JPG`,
     title: `By the Lake`,
     subtitle: `Watercolor on Paper`
   },
   {
     slug: 'art6',
-    image: `/ART/art6.jpg`,
+    image: `/portfolio-website/ART/art6.jpg`,
     title: `Oranges Still Life`,
     subtitle: `Oil on Canvas`
   },
   {
     slug: 'art7',
-    image: `/ART/art7.JPG`,
+    image: `/portfolio-website/ART/art7.JPG`,
     title: `Western Duality`,
     subtitle: `Oil on Canvas`
   },
   {
     slug: 'art8',
-    image: `/ART/art8.jpg`,
+    image: `/portfolio-website/ART/art8.jpg`,
     title: `Docks at Bellagio`,
     subtitle: `Watercolor on Paper`
   },
   {
     slug: 'art9',
-    image: `/ART/art9.JPG`,
+    image: `/portfolio-website/ART/art9.JPG`,
     title: `Dinner with an Old Friend`,
     subtitle: `Oil on Canvas`
   }

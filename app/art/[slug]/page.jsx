@@ -22,7 +22,7 @@ export default async function ArtDetails({ params }) {
   const artData = {
     'art1': {
       title: 'Geese at Dawn',
-      image: '/ART/art1.jpg',
+      image: '/portfolio-website/ART/art1.jpg',
       medium: 'Oil on Canvas',
       size: '36" x 24"',
       year: '2023',
@@ -30,7 +30,7 @@ export default async function ArtDetails({ params }) {
     },
     'art2': {
       title: 'Gracie Portrait',
-      image: '/ART/art2.jpg',
+      image: '/portfolio-website/ART/art2.jpg',
       medium: 'Acrylic on Canvas',
       size: '18" x 24"',
       year: '2023',
@@ -38,7 +38,7 @@ export default async function ArtDetails({ params }) {
     },
     'art3': {
       title: 'Portrait Study',
-      image: '/ART/art3.jpg',
+      image: '/portfolio-website/ART/art3.jpg',
       medium: 'Oil on Canvas',
       size: '18" x 12"',
       year: '2024',
@@ -46,7 +46,7 @@ export default async function ArtDetails({ params }) {
     },
     'art4': {
       title: 'Ponte Vecchio',
-      image: '/ART/art4.JPG',
+      image: '/portfolio-website/ART/art4.JPG',
       medium: 'Oil on Wood',
       size: '24" x 18"',
       year: '2024',
@@ -54,7 +54,7 @@ export default async function ArtDetails({ params }) {
     },
     'art5': {
       title: 'By the Lake',
-      image: '/ART/art5.JPG',
+      image: '/portfolio-website/ART/art5.JPG',
       medium: 'Watercolor on Paper',
       size: '5" x 7"',
       year: '2024',
@@ -62,7 +62,7 @@ export default async function ArtDetails({ params }) {
     },
     'art6': {
       title: 'Oranges Still Life',
-      image: '/ART/art6.jpg',
+      image: '/portfolio-website/ART/art6.jpg',
       medium: 'Oil on Canvas',
       size: '18" x 24"',
       year: '2024',
@@ -70,7 +70,7 @@ export default async function ArtDetails({ params }) {
     },
     'art7': {
       title: 'Western Duality',
-      image: '/ART/art7.JPG',
+      image: '/portfolio-website/ART/art7.JPG',
       medium: 'Oil on Canvas',
       size: '36" x 24"',
       year: '2025',
@@ -78,7 +78,7 @@ export default async function ArtDetails({ params }) {
     },
     'art8': {
       title: 'Docks at Bellagio',
-      image: '/ART/art8.jpg',
+      image: '/portfolio-website/ART/art8.jpg',
       medium: 'Watercolor on Paper',
       size: '5" x 7"',
       year: '2022',
@@ -86,7 +86,7 @@ export default async function ArtDetails({ params }) {
     },
     'art9': {
       title: 'Dinner with an Old Friend',
-      image: '/ART/art9.JPG',
+      image: '/portfolio-website/ART/art9.JPG',
       medium: 'Oil on Canvas',
       size: '12" x 18"',
       year: '2022',
