@@ -2,31 +2,19 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
-  const router = useRouter();
 
   const handleNavigation = (section) => {
     if (section.startsWith('#')) {
-      // For hash sections, first ensure we're on the home page, then scroll
-      const currentPath = window.location.pathname;
-      if (currentPath !== '/portfolio-website/' && !currentPath.endsWith('/')) {
-        // Navigate to home page first, then scroll after page loads
-        window.location.href = '/portfolio-website/' + section;
-      } else {
-        // Already on home page, just scroll
-        const element = document.querySelector(section);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
+      // For hash sections, navigate to home page with hash
+      window.location.href = '/portfolio-website/' + section;
     } else if (section === '') {
       // Navigate to home page
       window.location.href = '/portfolio-website/';
     } else {
       // Navigate to other pages
-      router.push(section);
+      window.location.href = '/portfolio-website' + section;
     }
   };
 
