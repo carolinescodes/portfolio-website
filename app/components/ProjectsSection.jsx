@@ -11,25 +11,25 @@ const ProjectsSection = () => {
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">PDF Summarizer</h3>
             <p className="text-gray-200 mb-4 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Summarizes PDF documents using AI. Built with React, Node.js, and OpenAI API.</p>
-            <a href="/projects/pdf-summarizer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
+            <a href="/portfolio-website/projects/pdf-summarizer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
           </div>
           {/* Personal Finance App */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Personal Finance App</h3>
             <p className="text-gray-200 mb-4 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Track expenses, set budgets, and visualize spending. Built with React Native and Firebase.</p>
-            <a href="/projects/personal-finance-app" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
+            <a href="/portfolio-website/projects/personal-finance-app" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
           </div>
           {/* Data Visualization Tool */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Data Visualization Tool</h3>
             <p className="text-gray-200 mb-4 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Interactive charts and dashboards for data analysis. Built with D3.js and Python Flask.</p>
-            <a href="/projects/data-visualization-tool" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
+            <a href="/portfolio-website/projects/data-visualization-tool" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
           </div>
           {/* Online Card Game */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Online Card Game</h3>
             <p className="text-gray-200 mb-4 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Multiplayer card game with real-time play. Built with React, Socket.io, and Node.js.</p>
-            <a href="/projects/online-card-game" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
+            <a href="/portfolio-website/projects/online-card-game" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</a>
           </div>
         </div>
       </div>
