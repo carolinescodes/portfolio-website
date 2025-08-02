@@ -10,15 +10,10 @@ const Navbar = () => {
   const handleNavigation = (section) => {
     if (section.startsWith('#')) {
       // For hash sections, first ensure we're on the home page, then scroll
-      if (window.location.pathname !== '/portfolio-website/' && window.location.pathname !== '/portfolio-website') {
+      const currentPath = window.location.pathname;
+      if (currentPath !== '/portfolio-website/' && !currentPath.endsWith('/')) {
         // Navigate to home page first, then scroll after page loads
-        router.push('/');
-        setTimeout(() => {
-          const element = document.querySelector(section);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 100);
+        window.location.href = '/portfolio-website/' + section;
       } else {
         // Already on home page, just scroll
         const element = document.querySelector(section);
@@ -28,7 +23,7 @@ const Navbar = () => {
       }
     } else if (section === '') {
       // Navigate to home page
-      router.push('/');
+      window.location.href = '/portfolio-website/';
     } else {
       // Navigate to other pages
       router.push(section);
