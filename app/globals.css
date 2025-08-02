@@ -1,4 +1,1 @@
 @import "tailwindcss";
-
-/* Ensure all Tailwind layers are included */
-@layer base, components, utilities;
