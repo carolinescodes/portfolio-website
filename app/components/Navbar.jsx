@@ -8,8 +8,31 @@ const Navbar = () => {
   const router = useRouter();
 
   const handleNavigation = (section) => {
-    // Always navigate to the home page first, then scroll to section
-    window.location.href = `/${section}`;
+    if (section.startsWith('#')) {
+      // For hash sections, first ensure we're on the home page, then scroll
+      if (window.location.pathname !== '/portfolio-website/' && window.location.pathname !== '/portfolio-website') {
+        // Navigate to home page first, then scroll after page loads
+        router.push('/');
+        setTimeout(() => {
+          const element = document.querySelector(section);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        // Already on home page, just scroll
+        const element = document.querySelector(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else if (section === '') {
+      // Navigate to home page
+      router.push('/');
+    } else {
+      // Navigate to other pages
+      router.push(section);
+    }
   };
 
   return (
@@ -24,7 +47,7 @@ const Navbar = () => {
           <li><button onClick={() => handleNavigation('#skills')} className="text-white hover:text-pink-400 transition-colors duration-200">Skills</button></li>
           <li><button onClick={() => handleNavigation('#mystory')} className="text-white hover:text-pink-400 transition-colors duration-200">My Story</button></li>
           <li><button onClick={() => handleNavigation('#art')} className="text-white hover:text-pink-400 transition-colors duration-200">Art</button></li>
-          <li><button onClick={() => window.location.href = '/blog'} className="text-white hover:text-pink-400 transition-colors duration-200">Blog</button></li>
+          <li><button onClick={() => handleNavigation('/blog')} className="text-white hover:text-pink-400 transition-colors duration-200">Blog</button></li>
           <li><button onClick={() => handleNavigation('#contact')} className="text-white hover:text-pink-400 transition-colors duration-200">Contact</button></li>
         </ul>
       </div>

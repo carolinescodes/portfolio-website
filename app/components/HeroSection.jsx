@@ -55,7 +55,7 @@ const HeroSection = () => {
           Hello, I'm Caroline
         </h1>
         <TypingSubheader />
-        <a href="/portfolio-website/Caroline_McMahon_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg hover:scale-105 hover:from-pink-500 hover:to-purple-500 transition-all duration-300 font-semibold animate-bounce mt-2">
+        <a href="/Caroline_McMahon_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg hover:scale-105 hover:from-pink-500 hover:to-purple-500 transition-all duration-300 font-semibold animate-bounce mt-2">
           View My Resume
         </a>
       </div>

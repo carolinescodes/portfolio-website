@@ -16,25 +16,25 @@ export default function ProjectDetails({ params }) {
   const projectData = {
     'pdf-summarizer': {
       title: 'PDF Summarizer',
-      video: '/portfolio-website/videos/pdf-summarizer-demo.mp4',
+      video: '/videos/pdf-summarizer-demo.mp4',
       github: 'https://github.com/carolinescodes/pdf-summarizer',
       description: 'An intelligent PDF document summarizer that leverages OpenAI\'s GPT models to extract key insights and generate concise summaries. Features include drag-and-drop file upload, real-time processing, and customizable summary lengths. Built with React for a responsive frontend, Node.js/Express backend, and integrated with OpenAI API for natural language processing.'
     },
     'personal-finance-app': {
       title: 'Personal Finance App',
-      video: '/portfolio-website/videos/personal-finance-demo.mp4',
+      video: '/videos/personal-finance-demo.mp4',
       github: 'https://github.com/carolinescodes/baddie-budget',
       description: 'A comprehensive personal finance management application designed to help users track expenses, set financial goals, and visualize spending patterns. Features include expense categorization, budget alerts, spending analytics with interactive charts, and secure data storage. Built with React Native for cross-platform compatibility and Firebase for real-time data synchronization.'
     },
     'data-visualization-tool': {
       title: 'Data Visualization Tool',
-      video: '/portfolio-website/videos/data-viz-demo.mp4',
+      video: '/videos/data-viz-demo.mp4',
       github: 'https://github.com/carolinescodes/data-visualization-dashboard',
       description: 'An interactive data visualization dashboard that transforms complex datasets into meaningful insights through dynamic charts and graphs. Features include multiple chart types, real-time data updates, customizable filtering, and export capabilities. Built with D3.js for powerful visualizations, Python Flask for data processing, and responsive design for optimal viewing across devices.'
     },
     'online-card-game': {
       title: 'Online Card Game',
-      video: '/portfolio-website/videos/card-game-demo.mp4',
+      video: '/videos/card-game-demo.mp4',
       github: 'https://github.com/yourusername/online-card-game',
       description: 'A real-time multiplayer card game platform supporting multiple players in interactive gameplay sessions. Features include live game rooms, player matchmaking, real-time move synchronization, and game state management. Built with React for an engaging user interface, Socket.io for seamless real-time communication, and Node.js backend for robust game logic and session handling.'
     }
