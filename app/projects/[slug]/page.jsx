@@ -1,6 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 
+// Generate static params for all projects
+export async function generateStaticParams() {
+  return [
+    { slug: 'pdf-summarizer' },
+    { slug: 'personal-finance-app' },
+    { slug: 'data-visualization-tool' },
+    { slug: 'online-card-game' }
+  ];
+}
+
 export default function ProjectDetails({ params }) {
   // Update with actual project names and videos
   const projectData = {

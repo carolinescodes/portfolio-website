@@ -1,6 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  return [
+    { slug: 'what-am-i-doing' },
+    { slug: 'what-am-i-thinking' }
+  ];
+}
+
 const blogData = {
   'what-am-i-doing': {
     title: 'What Am I Doing',

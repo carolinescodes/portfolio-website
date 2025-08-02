@@ -1,6 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
 
+// Generate static params for all art pieces
+export async function generateStaticParams() {
+  return [
+    { slug: 'art1' },
+    { slug: 'art2' },
+    { slug: 'art3' },
+    { slug: 'art4' },
+    { slug: 'art5' },
+    { slug: 'art6' },
+    { slug: 'art7' },
+    { slug: 'art8' },
+    { slug: 'art9' }
+  ];
+}
+
 export default async function ArtDetails({ params }) {
   const { slug } = await params;
   // Art pieces data - updated to match ArtSection.jsx
