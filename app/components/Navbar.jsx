@@ -2,19 +2,21 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
+  const router = useRouter();
 
   const handleNavigation = (section) => {
     if (section.startsWith('#')) {
       // For hash sections, navigate to home page with hash
-      window.location.href = '/portfolio-website/' + section;
+      router.push('/' + section);
     } else if (section === '') {
       // Navigate to home page
-      window.location.href = '/portfolio-website/';
+      router.push('/');
     } else {
       // Navigate to other pages
-      window.location.href = '/portfolio-website' + section;
+      router.push(section);
     }
   };
 

@@ -7,7 +7,7 @@ const ProjectsSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-800 via-indigo-900 to-black opacity-70 blur-2xl -z-10" />
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-8 text-pink-400 drop-shadow-lg text-center">Coding Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* PDF Summarizer */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">PDF Summarizer</h3>

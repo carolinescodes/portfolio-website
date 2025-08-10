@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/portfolio-website',
+  basePath: '/portfolio-website', // Restored for GitHub Pages deployment
   images: {
     unoptimized: true
   },

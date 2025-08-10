@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const storyData = [
 	{
@@ -55,9 +56,11 @@ const MyStorySection = () => {
 							}`}
 						>
 							<div className="w-64 h-64 rounded-2xl overflow-hidden shadow-2xl">
-								<img
+								<Image
 									src={step.image}
 									alt={step.title}
+									width={256}
+									height={256}
 									className="object-cover w-full h-full"
 								/>
 							</div>
