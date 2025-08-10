@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const artPieces = [
   {
@@ -75,11 +74,9 @@ const ArtSection = () => {
             <Link href={`/art/${piece.slug}`} key={idx}>
               <div className="relative group rounded-xl overflow-hidden shadow-xl border-2 border-pink-400 cursor-pointer hover:border-pink-300 transition-all duration-300 h-full flex flex-col">
                 <div className="flex-1 overflow-hidden">
-                  <Image 
-                    src={piece.image} 
+                  <img 
+                    src={`/portfolio-website${piece.image}`}
                     alt={piece.title} 
-                    width={300}
-                    height={300}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
                   />
                 </div>

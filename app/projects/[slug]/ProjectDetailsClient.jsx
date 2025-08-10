@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import Image from 'next/image';
 
 export default function ProjectDetailsClient({ project }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -22,11 +21,9 @@ export default function ProjectDetailsClient({ project }) {
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-4xl">
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
           <div className={`relative rounded-xl shadow-xl w-full ${isMobileProject ? 'max-w-56' : 'max-w-md'}`}>
-            <Image 
-              src={project.images[currentImageIndex]}
+            <img 
+              src={`/portfolio-website${project.images[currentImageIndex]}`}
               alt={`${project.title} demo ${currentImageIndex + 1}`}
-              width={isMobileProject ? 230 : 500}
-              height={isMobileProject ? 600 : 400}
               className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
               style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
             />
