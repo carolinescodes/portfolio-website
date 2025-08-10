@@ -75,7 +75,7 @@ const ArtSection = () => {
               <div className="relative group rounded-xl overflow-hidden shadow-xl border-2 border-pink-400 cursor-pointer hover:border-pink-300 transition-all duration-300 h-full flex flex-col">
                 <div className="flex-1 overflow-hidden">
                   <img 
-                    src={`/portfolio-website${piece.image}`}
+                    src={`/portfolio-website${piece.image}?v=${process.env.BUILD_TIME}`}
                     alt={piece.title} 
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
                   />

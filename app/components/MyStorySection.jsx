@@ -56,7 +56,7 @@ const MyStorySection = () => {
 						>
 							<div className="w-64 h-64 rounded-2xl overflow-hidden shadow-2xl">
 								<img
-									src={`/portfolio-website${step.image}`}
+									src={`/portfolio-website${step.image}?v=${process.env.BUILD_TIME}`}
 									alt={step.title}
 									className="object-cover w-full h-full"
 								/>

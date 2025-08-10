@@ -22,7 +22,7 @@ export default function ProjectDetailsClient({ project }) {
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
           <div className={`relative rounded-xl shadow-xl w-full ${isMobileProject ? 'max-w-56' : 'max-w-md'}`}>
             <img 
-              src={`/portfolio-website${project.images[currentImageIndex]}`}
+              src={`/portfolio-website${project.images[currentImageIndex]}?v=${process.env.BUILD_TIME}`}
               alt={`${project.title} demo ${currentImageIndex + 1}`}
               className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
               style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
