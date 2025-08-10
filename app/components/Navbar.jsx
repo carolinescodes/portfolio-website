@@ -32,7 +32,6 @@ const Navbar = () => {
           <li><button onClick={() => handleNavigation('#skills')} className="text-white hover:text-pink-400 transition-colors duration-200">Skills</button></li>
           <li><button onClick={() => handleNavigation('#mystory')} className="text-white hover:text-pink-400 transition-colors duration-200">My Story</button></li>
           <li><button onClick={() => handleNavigation('#art')} className="text-white hover:text-pink-400 transition-colors duration-200">Art</button></li>
-          <li><button onClick={() => handleNavigation('/blog')} className="text-white hover:text-pink-400 transition-colors duration-200">Blog</button></li>
           <li><button onClick={() => handleNavigation('#contact')} className="text-white hover:text-pink-400 transition-colors duration-200">Contact</button></li>
         </ul>
       </div>
