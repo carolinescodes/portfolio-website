@@ -54,6 +54,42 @@ const artPieces = [
     image: `/ART/art9.JPG`,
     title: `Dinner with an Old Friend`,
     subtitle: `Oil on Canvas`
+  },
+  {
+    slug: 'art10',
+    image: `/ART/IMG_5179.jpg`,
+    title: `Birch Surtdy`,
+    subtitle: `Marker on Paper`
+  },
+  {
+    slug: 'art11',
+    image: `/ART/IMG_5182.jpg`,
+    title: `Girl with Angst`,
+    subtitle: `Marker on Paper`
+  },
+  {
+    slug: 'art12',
+    image: `/ART/IMG_5188.jpg`,
+    title: `Self Portrait`,
+    subtitle: `Oil on Canvas Paper`
+  },
+  {
+    slug: 'art13',
+    image: `/ART/IMG_5189.jpg`,
+    title: `Anxiety at Bar`,
+    subtitle: `Oil on Canvas Paper`
+  },
+  {
+    slug: 'art14',
+    image: `/ART/IMG_5192.jpg`,
+    title: `Monstrous`,
+    subtitle: `Oil on Panel`
+  },
+  {
+    slug: 'art15',
+    image: `/ART/IMG_5193.jpg`,
+    title: `Maliged`,
+    subtitle: `Oil on Canvas`
   }
 ];
 
