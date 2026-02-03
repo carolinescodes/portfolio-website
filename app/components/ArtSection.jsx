@@ -57,38 +57,38 @@ const artPieces = [
   },
   {
     slug: 'art10',
-    image: `/ART/IMG_5179.jpg`,
-    title: `Birch Surtdy`,
+    image: `/ART/Birch Study.jpg`,
+    title: `Birch Study`,
     subtitle: `Marker on Paper`
   },
   {
     slug: 'art11',
-    image: `/ART/IMG_5182.jpg`,
+    image: `/ART/Girl with Angst.jpg`,
     title: `Girl with Angst`,
     subtitle: `Marker on Paper`
   },
   {
     slug: 'art12',
-    image: `/ART/IMG_5188.jpg`,
-    title: `Self Portrait`,
+    image: `/ART/Self Portrait as Meme.jpg`,
+    title: `Self Portrait as Meme`,
     subtitle: `Oil on Canvas Paper`
   },
   {
     slug: 'art13',
-    image: `/ART/IMG_5189.jpg`,
-    title: `Anxiety at Bar`,
+    image: `/ART/Anxiety at the Bar.jpg`,
+    title: `Anxiety at the Bar`,
     subtitle: `Oil on Canvas Paper`
   },
   {
     slug: 'art14',
-    image: `/ART/IMG_5192.jpg`,
+    image: `/ART/Monstrous.jpg`,
     title: `Monstrous`,
     subtitle: `Oil on Panel`
   },
   {
     slug: 'art15',
-    image: `/ART/IMG_5193.jpg`,
-    title: `Maliged`,
+    image: `/ART/Malgined.jpg`,
+    title: `Malgined`,
     subtitle: `Oil on Canvas`
   }
 ];
