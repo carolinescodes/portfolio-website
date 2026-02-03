@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 const artPieces = [
   {
@@ -65,42 +64,35 @@ const ArtSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-12 text-pink-400 drop-shadow-lg text-center">Art Gallery</h2>
         
-        {/* Dynamic responsive grid that adjusts based on number of items and screen size */}
-        <div className="grid auto-fit-minmax gap-4 sm:gap-6 lg:gap-8" style={{
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gridAutoRows: 'minmax(300px, auto)'
-        }}>
+        {/* Raw collage gallery wall */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 sm:gap-6 lg:gap-8">
           {artPieces.map((piece, idx) => (
-            <Link href={`/art/${piece.slug}`} key={idx}>
-              <div className="relative group rounded-xl overflow-hidden shadow-xl border-2 border-pink-400 cursor-pointer hover:border-pink-300 transition-all duration-300 h-full flex flex-col">
-                <div className="flex-1 overflow-hidden">
-                  <img 
-                    src={`/portfolio-website${piece.image}?v=${process.env.BUILD_TIME}`}
-                    alt={piece.title} 
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
-                  />
-                </div>
+            <div key={idx} className="mb-4 sm:mb-6 lg:mb-8 break-inside-avoid">
+              <div className="relative group overflow-hidden">
+                <img 
+                  src={`/portfolio-website${piece.image}?v=${process.env.BUILD_TIME}`}
+                  alt={piece.title} 
+                  className="w-full h-auto object-contain"
+                />
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
                   <h3 className="text-pink-400 text-lg sm:text-xl font-bold mb-2 text-center">{piece.title}</h3>
                   <p className="text-white text-sm sm:text-base text-center">{piece.subtitle}</p>
-                  <p className="text-pink-300 text-xs sm:text-sm mt-2 text-center">Click to view details</p>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
         
         {/* Instructions for easy adding of new artwork */}
         {/* 
-        To add new artwork:
-        1. Add your image to /public/ART/ folder
-        2. Add a new object to the artPieces array above with:
-           - slug: 'art10' (increment number)
-           - image: '/ART/your-image.jpg'
-           - title: 'Your Artwork Title'
-           - subtitle: 'Medium/Technique'
-        3. Create corresponding page in /app/art/[slug]/page.jsx artData object
-        The grid will automatically adjust to accommodate any number of pieces!
+          To add new artwork:
+          1. Add your image to /public/ART/ folder
+          2. Add a new object to the artPieces array above with:
+            - slug: 'art10' (increment number)
+            - image: '/ART/your-image.jpg'
+            - title: 'Your Artwork Title'
+            - subtitle: 'Medium/Technique'
+          The collage wall will automatically adjust to accommodate any number of pieces!
         */}
       </div>
     </section>

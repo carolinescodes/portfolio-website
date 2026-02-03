@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 export default function ProjectDetailsClient({ project }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const hasImages = Array.isArray(project.images) && project.images.length > 0;
 
   // Determine if this is a mobile app project (personal finance)
   const isMobileProject = project.title === 'Personal Finance App';
@@ -21,38 +22,46 @@ export default function ProjectDetailsClient({ project }) {
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-4xl">
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
           <div className={`relative rounded-xl shadow-xl w-full ${isMobileProject ? 'max-w-56' : 'max-w-md'}`}>
-            <img 
-              src={`/portfolio-website${project.images[currentImageIndex]}?v=${process.env.BUILD_TIME}`}
-              alt={`${project.title} demo ${currentImageIndex + 1}`}
-              className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
-              style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
-            />
-            {project.images.length > 1 && (
+            {hasImages ? (
               <>
-                <button 
-                  onClick={prevImage}
-                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
-                >
-                  ←
-                </button>
-                <button 
-                  onClick={nextImage}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
-                >
-                  →
-                </button>
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-                  {project.images.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentImageIndex(index)}
-                      className={`w-3 h-3 rounded-full transition-all ${
-                        index === currentImageIndex ? 'bg-pink-400' : 'bg-white bg-opacity-50'
-                      }`}
-                    />
-                  ))}
-                </div>
+                <img 
+                  src={`/portfolio-website${project.images[currentImageIndex]}?v=${process.env.BUILD_TIME}`}
+                  alt={`${project.title} demo ${currentImageIndex + 1}`}
+                  className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
+                  style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
+                />
+                {project.images.length > 1 && (
+                  <>
+                    <button 
+                      onClick={prevImage}
+                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
+                    >
+                      ←
+                    </button>
+                    <button 
+                      onClick={nextImage}
+                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
+                    >
+                      →
+                    </button>
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                      {project.images.map((_, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setCurrentImageIndex(index)}
+                          className={`w-3 h-3 rounded-full transition-all ${
+                            index === currentImageIndex ? 'bg-pink-400' : 'bg-white bg-opacity-50'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
               </>
+            ) : (
+              <div className="rounded-xl w-full h-72 md:h-80 bg-white/10 border border-white/10 flex items-center justify-center text-gray-300 text-center px-6">
+                Screenshots coming soon.
+              </div>
             )}
           </div>
         </div>
