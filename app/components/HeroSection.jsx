@@ -49,13 +49,13 @@ const TypingSubheader = () => {
 const HeroSection = () => {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-pink-700 opacity-70 blur-xl z-0" />
+      <div className="absolute inset-0 bg-linear-to-br from-purple-900 via-indigo-900 to-pink-700 opacity-70 blur-xl z-0" />
       <div className="z-10 text-center p-10">
         <h1 className="text-white mb-4 text-5xl lg:text-7xl font-extrabold drop-shadow-lg animate-fade-in tracking-tight">
           Hello, I'm Caroline
         </h1>
         <TypingSubheader />
-        <a href="/Caroline_McMahon_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg hover:scale-105 hover:from-pink-500 hover:to-purple-500 transition-all duration-300 font-semibold animate-bounce mt-2">
+        <a href="/portfolio-website/Caroline_McMahon_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-linear-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg hover:scale-105 hover:from-pink-500 hover:to-purple-500 transition-all duration-300 font-semibold animate-bounce mt-2">
           View My Resume
         </a>
       </div>
@@ -73,7 +73,7 @@ const HeroSection = () => {
           <svg className="w-10 h-10 text-white hover:scale-125 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.416-4.042-1.416c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.084 1.84 1.236 1.84 1.236c1.07 1.834 2.809 1.304 3.495.997c.108-.775.418-1.305.762-1.605c-2.665-.305-5.466-1.334-5.466-5.93c0-1.31.469-2.381 1.236-3.221c-.124-.303-.535-1.523.117-3.176c0 0 1.008-.322 3.301 1.23c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.553 3.297-1.23 3.297-1.23c.653 1.653.242 2.873.119 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.609-2.804 5.624-5.475 5.921c.43.371.823 1.102.823 2.222c0 1.606-.014 2.898-.014 3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/></svg>
         </a>
       </div>
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent z-20" />
+      <div className="absolute top-0 left-0 w-full h-32 bg-linear-to-b from-black/40 to-transparent z-20" />
     </section>
   )
 }

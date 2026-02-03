@@ -30,31 +30,31 @@ const ProjectsSection = () => {
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Blackjack Game</h3>
               <p className="text-gray-200 mb-4 opacity-100 group-hover:text-gray-300 group-hover:opacity-80 transition-all duration-300">A browser-based blackjack game with core gameplay logic and clean UI.</p>
-              <Link href="/projects/black-jack-game" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</Link>
+              <a href="https://github.com/carolinescodes/black-jack-game" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View on GitHub</a>
           </div>
           {/* Taylor Swift Song Sorter */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Taylor Swift Song Sorter</h3>
               <p className="text-gray-200 mb-4 opacity-100 group-hover:text-gray-300 group-hover:opacity-80 transition-all duration-300">An interactive sorter to help users rank or organize songs.</p>
-              <Link href="/projects/taylor-swift-song-sorter" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</Link>
+              <a href="https://github.com/carolinescodes/taylor-swift-song-sorter" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View on GitHub</a>
           </div>
           {/* Basic Wordle Game */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Basic Wordle Game</h3>
               <p className="text-gray-200 mb-4 opacity-100 group-hover:text-gray-300 group-hover:opacity-80 transition-all duration-300">A Wordle-style word guessing game with feedback per guess.</p>
-              <Link href="/projects/basic-wordle-game" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</Link>
+              <a href="https://github.com/carolinescodes/basic-wordle-game" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View on GitHub</a>
           </div>
           {/* Creating and Cracking Computer Ciphers */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Creating and Cracking Computer Ciphers</h3>
               <p className="text-gray-200 mb-4 opacity-100 group-hover:text-gray-300 group-hover:opacity-80 transition-all duration-300">Projects focused on building and breaking classic cipher techniques.</p>
-              <Link href="/projects/creating-and-cracking-computer-ciphers" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</Link>
+              <a href="https://github.com/carolinescodes/creating-and-cracking-computer-ciphers" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View on GitHub</a>
           </div>
           {/* Clothing Image Identifier */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">
             <h3 className="text-2xl font-semibold mb-2 text-pink-500 group-hover:opacity-100 opacity-50 transition-opacity duration-300">Clothing Image Identifier</h3>
               <p className="text-gray-200 mb-4 opacity-100 group-hover:text-gray-300 group-hover:opacity-80 transition-all duration-300">An image classification project for identifying clothing types.</p>
-              <Link href="/projects/clothing-image-identifier" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View Details</Link>
+              <a href="https://github.com/carolinescodes/clothing-image-identifier" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline group-hover:opacity-100 opacity-50 transition-opacity duration-300">View on GitHub</a>
           </div>
           {/* Trucking App */}
           <div className="bg-white bg-opacity-5 rounded-xl shadow-xl p-6 hover:scale-105 hover:bg-opacity-10 transition-transform duration-300 backdrop-blur-md border border-white/5 group">

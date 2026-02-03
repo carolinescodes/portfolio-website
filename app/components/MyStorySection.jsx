@@ -41,20 +41,20 @@ const storyData = [
 const MyStorySection = () => {
 	return (
 		<section id="mystory" className="py-24 relative">
-			<div className="absolute inset-0 bg-gradient-to-br from-pink-700 via-purple-900 to-indigo-900 opacity-40 blur-2xl -z-10" />
+			<div className="absolute inset-0 bg-linear-to-br from-pink-700 via-purple-900 to-indigo-900 opacity-40 blur-2xl -z-10" />
 			<div className="max-w-5xl mx-auto px-6">
 				<h2 className="text-4xl font-bold mb-12 text-pink-400 drop-shadow-lg text-center">
 					My Story
 				</h2>
-				<div className="flex flex-col gap-16 relative">
+				<div className="flex flex-col gap-10 relative">
 					{storyData.map((step, idx) => (
 						<div
 							key={idx}
-							className={`relative flex flex-col md:flex-row items-center md:items-start gap-8 ${
+							className={`relative flex flex-col md:flex-row items-center md:items-start gap-6 ${
 								idx % 2 === 0 ? '' : 'md:flex-row-reverse'
 							}`}
 						>
-							<div className="w-64 h-64 rounded-2xl overflow-hidden shadow-2xl">
+							<div className="w-48 h-48 rounded-2xl overflow-hidden shadow-2xl">
 								<img
 									src={`/portfolio-website${step.image}?v=${process.env.BUILD_TIME}`}
 									alt={step.title}

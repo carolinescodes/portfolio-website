@@ -60,7 +60,7 @@ const artPieces = [
 const ArtSection = () => {
   return (
     <section id="art" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-700 via-purple-900 to-indigo-900 opacity-60 blur-2xl -z-10" />
+      <div className="absolute inset-0 bg-linear-to-br from-pink-700 via-purple-900 to-indigo-900 opacity-60 blur-2xl -z-10" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-12 text-pink-400 drop-shadow-lg text-center">Art Gallery</h2>
         
