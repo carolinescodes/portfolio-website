@@ -94,7 +94,7 @@ const artPieces = [
   ,
   {
     slug: 'art16',
-    image: `/ART/Father Figures.jpg`,
+    image: `/ART/art16.jpg`,
     title: `Father Figures`,
     subtitle: `Oil on Canvas`
   }
