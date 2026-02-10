@@ -5,6 +5,8 @@ export default function ProjectDetailsClient({ project }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const hasImages = Array.isArray(project.images) && project.images.length > 0;
 
+  const isVideoFile = (path) => /\.(mp4|webm|mov)$/i.test(path);
+
   // Determine if this is a mobile app project (personal finance)
   const isMobileProject = project.title === 'Personal Finance App';
   
@@ -24,12 +26,22 @@ export default function ProjectDetailsClient({ project }) {
           <div className={`relative rounded-xl shadow-xl w-full ${isMobileProject ? 'max-w-56' : 'max-w-md'}`}>
             {hasImages ? (
               <>
-                <img 
-                  src={`/portfolio-website${project.images[currentImageIndex]}?v=${process.env.BUILD_TIME}`}
-                  alt={`${project.title} demo ${currentImageIndex + 1}`}
-                  className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
-                  style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
-                />
+                {isVideoFile(project.images[currentImageIndex]) ? (
+                  <video
+                    src={`/portfolio-website${project.images[currentImageIndex]}?v=${process.env.BUILD_TIME}`}
+                    controls
+                    playsInline
+                    className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
+                    style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
+                  />
+                ) : (
+                  <img 
+                    src={`/portfolio-website${project.images[currentImageIndex]}?v=${process.env.BUILD_TIME}`}
+                    alt={`${project.title} demo ${currentImageIndex + 1}`}
+                    className={`rounded-xl w-full h-auto ${isMobileProject ? 'object-contain bg-gray-100' : 'object-cover'}`}
+                    style={isMobileProject ? { maxHeight: '500px', minHeight: '300px' } : { maxHeight: '400px' }}
+                  />
+                )}
                 {project.images.length > 1 && (
                   <>
                     <button 

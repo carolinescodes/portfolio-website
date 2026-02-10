@@ -91,6 +91,13 @@ const artPieces = [
     title: `Malgined`,
     subtitle: `Oil on Canvas`
   }
+  ,
+  {
+    slug: 'art16',
+    image: `/ART/Father Figures.jpg`,
+    title: `Father Figures`,
+    subtitle: `Oil on Canvas`
+  }
 ];
 
 const ArtSection = () => {
